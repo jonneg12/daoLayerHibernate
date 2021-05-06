@@ -12,7 +12,6 @@ import java.util.Optional;
 @Repository
 public interface PersonRepository extends JpaRepository<Person, MainInfo> {
 
-
     List<Person> findByCityOfLiving(City city);
 
     List<Person> findByMainInfoAgeLessThanOrderByMainInfoAgeAsc(int age);
